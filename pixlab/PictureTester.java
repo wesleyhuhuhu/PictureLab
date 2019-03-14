@@ -50,7 +50,13 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
-  
+  public static void testCopy()
+  {
+      Picture ocean = new Picture("beach.JPG");
+      Picture daddy = new Picture("snowman.jpg");
+      ocean.copy(daddy, 150, 150, 75, 100, 300, 300);
+      ocean.explore();
+  }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -58,7 +64,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
